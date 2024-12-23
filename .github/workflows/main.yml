@@ -21,6 +21,10 @@ jobs:
         curl -sSL https://install.python-poetry.org | python3 -
         echo "${{ runner.tool_cache }}/python/bin" >> $GITHUB_PATH
 
+    - name: Set up authentication
+      run: echo "machine github.com login ${{ secrets.GH_PAT }}" > ~/.netrc
+
     - name: Install dependencies
       run: |
+        poetry config repositories.private-repo https://github.com/testing-organization-jcayllahua/package-artifacts/releases/download/
         poetry install

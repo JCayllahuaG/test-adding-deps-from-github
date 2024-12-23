@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-python-package = {url = "https:github.com/testing-organization-jcayllahua/package-artifacts/releases/download/1.0.12/python_package-1.0.12-py3-none-any.whl"}
+python-package = {url = "https://github.com/testing-organization-jcayllahua/package-artifacts/releases/download/1.0.12/python_package-1.0.12-py3-none-any.whl"}
 
 
 [build-system]
